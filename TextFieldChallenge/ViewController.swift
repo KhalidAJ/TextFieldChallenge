@@ -22,6 +22,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         textField1.delegate = Di5its
         textField2.delegate = CashText
         switchButton.setOn(false, animated: false)
+        textField3.delegate = self
         
         
         
@@ -33,6 +34,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
         textField.resignFirstResponder()
         
         return true;
+    }
+    
+    @IBAction func disableText(_ sender: UISwitch){
+        if !sender.isOn {
+            textField3.resignFirstResponder()
+        }
     }
   
     }
