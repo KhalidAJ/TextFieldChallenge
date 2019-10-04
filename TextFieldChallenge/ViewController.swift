@@ -21,9 +21,13 @@ class ViewController: UIViewController,UITextFieldDelegate {
         // Do any additional setup after loading the view.
         textField1.delegate = Di5its
         textField2.delegate = CashText
+       
         
         
     }
+  
+    }
+   
 
 
 }
