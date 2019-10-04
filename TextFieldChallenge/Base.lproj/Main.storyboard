@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,56 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextFieldChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgm-nj-s1k">
+                                <rect key="frame" x="20" y="57" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="P9d-Xw-Tdr"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EBv-fh-ASY">
+                                <rect key="frame" x="20" y="178" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7hV-TU-6fJ">
+                                <rect key="frame" x="20" y="120" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="placeholderTextColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qgm-nj-s1k" secondAttribute="trailing" constant="20" id="0a3-Gp-Pjx"/>
+                            <constraint firstItem="7hV-TU-6fJ" firstAttribute="trailing" secondItem="qgm-nj-s1k" secondAttribute="trailing" id="IfB-WA-gzO"/>
+                            <constraint firstItem="EBv-fh-ASY" firstAttribute="top" secondItem="7hV-TU-6fJ" secondAttribute="bottom" constant="24" id="MD8-k3-YhG"/>
+                            <constraint firstItem="7hV-TU-6fJ" firstAttribute="centerX" secondItem="qgm-nj-s1k" secondAttribute="centerX" id="Qh9-Hl-OHr"/>
+                            <constraint firstItem="qgm-nj-s1k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ugu-u7-gGq"/>
+                            <constraint firstItem="qgm-nj-s1k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="WDF-d7-vyP"/>
+                            <constraint firstItem="7hV-TU-6fJ" firstAttribute="top" secondItem="qgm-nj-s1k" secondAttribute="bottom" constant="29" id="XNC-TA-mh4"/>
+                            <constraint firstItem="7hV-TU-6fJ" firstAttribute="leading" secondItem="qgm-nj-s1k" secondAttribute="leading" id="Xf8-o1-G1U"/>
+                            <constraint firstItem="EBv-fh-ASY" firstAttribute="trailing" secondItem="7hV-TU-6fJ" secondAttribute="trailing" id="cQZ-qm-43F"/>
+                            <constraint firstItem="qgm-nj-s1k" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eLa-AN-Hrz"/>
+                            <constraint firstItem="EBv-fh-ASY" firstAttribute="leading" secondItem="7hV-TU-6fJ" secondAttribute="leading" id="hvJ-Qv-g53"/>
+                            <constraint firstItem="EBv-fh-ASY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oom-lu-Ff3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textField1" destination="qgm-nj-s1k" id="hDx-fL-MrC"/>
+                        <outlet property="textField2" destination="7hV-TU-6fJ" id="oZT-zL-Ixe"/>
+                        <outlet property="textField3" destination="EBv-fh-ASY" id="KHw-yt-iUb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </scene>
     </scenes>
 </document>

@@ -13,6 +13,7 @@
 		9EF468B32347CFF000AD1772 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF468B12347CFF000AD1772 /* Main.storyboard */; };
 		9EF468B52347CFF200AD1772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EF468B42347CFF200AD1772 /* Assets.xcassets */; };
 		9EF468B82347CFF200AD1772 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF468B62347CFF200AD1772 /* LaunchScreen.storyboard */; };
+		9EF468C12347EB5200AD1772 /* FiveDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF468C02347EB5200AD1772 /* FiveDigits.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9EF468B42347CFF200AD1772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EF468B72347CFF200AD1772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EF468B92347CFF200AD1772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EF468C02347EB5200AD1772 /* FiveDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDigits.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +61,21 @@
 				9EF468AB2347CFF000AD1772 /* AppDelegate.swift */,
 				9EF468AD2347CFF000AD1772 /* SceneDelegate.swift */,
 				9EF468AF2347CFF000AD1772 /* ViewController.swift */,
+				9EF468BF2347E84800AD1772 /* TextField */,
 				9EF468B12347CFF000AD1772 /* Main.storyboard */,
 				9EF468B42347CFF200AD1772 /* Assets.xcassets */,
 				9EF468B62347CFF200AD1772 /* LaunchScreen.storyboard */,
 				9EF468B92347CFF200AD1772 /* Info.plist */,
 			);
 			path = TextFieldChallenge;
+			sourceTree = "<group>";
+		};
+		9EF468BF2347E84800AD1772 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				9EF468C02347EB5200AD1772 /* FiveDigits.swift */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				9EF468B02347CFF000AD1772 /* ViewController.swift in Sources */,
 				9EF468AC2347CFF000AD1772 /* AppDelegate.swift in Sources */,
+				9EF468C12347EB5200AD1772 /* FiveDigits.swift in Sources */,
 				9EF468AE2347CFF000AD1772 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
