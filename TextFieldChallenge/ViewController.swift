@@ -12,6 +12,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
        @IBOutlet weak var textField1: UITextField!
        @IBOutlet weak var textField2: UITextField!
        @IBOutlet weak var textField3: UITextField!
+       @IBOutlet weak var switchButton: UISwitch!
     
     let Di5its = FiveDigits()
     let CashText = CashTextField()

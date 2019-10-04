@@ -27,6 +27,9 @@
                                 <rect key="frame" x="20" y="178" width="300" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ydH-PI-pbc"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7hV-TU-6fJ">
                                 <rect key="frame" x="20" y="120" width="374" height="34"/>
@@ -59,6 +62,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="switchButton" destination="c7B-bw-xTu" id="taM-Uy-5qg"/>
                         <outlet property="textField1" destination="qgm-nj-s1k" id="hDx-fL-MrC"/>
                         <outlet property="textField2" destination="7hV-TU-6fJ" id="oZT-zL-Ixe"/>
                         <outlet property="textField3" destination="EBv-fh-ASY" id="KHw-yt-iUb"/>
