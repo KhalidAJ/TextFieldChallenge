@@ -46,6 +46,17 @@ class CashTextField: NSObject, UITextFieldDelegate {
            
            return centsString
        }
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+           if textField.text!.isEmpty {
+               textField.text = "$0.00"
+           }
+       }
+       
+       func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           textField.resignFirstResponder()
+           
+           return true;
+       }
                 
    }
 
