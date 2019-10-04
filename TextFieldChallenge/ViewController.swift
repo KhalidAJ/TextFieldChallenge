@@ -14,10 +14,13 @@ class ViewController: UIViewController,UITextFieldDelegate {
        @IBOutlet weak var textField3: UITextField!
     
     let Di5its = FiveDigits()
+    let CashText = CashTextField()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         textField1.delegate = Di5its
+        textField2.delegate = CashText
+        
         
     }
 
