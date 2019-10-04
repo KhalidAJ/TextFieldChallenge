@@ -21,10 +21,14 @@ class ViewController: UIViewController,UITextFieldDelegate {
         // Do any additional setup after loading the view.
         textField1.delegate = Di5its
         textField2.delegate = CashText
+        switchButton.setOn(false, animated: false)
         
         
         
     }
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+           return self.switchButton.isOn
+       }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
